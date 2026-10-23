@@ -3,7 +3,7 @@ import urllib.request
 import rioxarray as rxr
 
 # 1. Load your preprocessed Organic Matter map as the master template
-template_path = "cv_om_kg_sq_m.tif"
+template_path = "data/cv_om_kg_sq_m.tif"
 
 if not os.path.exists(template_path):
     raise FileNotFoundError(

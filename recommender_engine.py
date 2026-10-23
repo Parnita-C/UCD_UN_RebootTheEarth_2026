@@ -43,17 +43,18 @@ CROP_DATABASE = {
 
 
 class SoilDataExtractor:
-    def __init__(self, base_dir="."):
+    def __init__(self, data_dir="data"):
+        """Loads and prepares the 4 cropped Central Valley GeoTIFF rasters from the specified data directory."""
         self.files = {
-            "om": os.path.join(base_dir, "cv_om_kg_sq_m.tif"),
-            "ph": os.path.join(base_dir, "cv_ph.tif"),
-            "ec": os.path.join(base_dir, "cv_ec.tif"),
-            "texture": os.path.join(base_dir, "cv_texture_0_25.tif")
+            "om": os.path.join(data_dir, "cv_om_kg_sq_m.tif"),
+            "ph": os.path.join(data_dir, "cv_ph.tif"),
+            "ec": os.path.join(data_dir, "cv_ec.tif"),
+            "texture": os.path.join(data_dir, "cv_texture_0_25.tif")
         }
 
         for name, path in self.files.items():
             if not os.path.exists(path):
-                raise FileNotFoundError(f"Missing raster file: {path}")
+                raise FileNotFoundError(f"Missing raster file: {os.path.abspath(path)}")
 
         self.rasters = {
             k: rxr.open_rasterio(v, masked=True) for k, v in self.files.items()
