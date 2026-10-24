@@ -1,0 +1,43 @@
+{
+  "width": 1260,
+  "height": 1140,
+  "west": -124.50000022263262,
+  "north": 41.99941474591267,
+  "east": -114.00000026467723,
+  "south": 32.49941478398919,
+  "dx": 0.008333333299964604,
+  "dy": 0.008333333299932874,
+  "crs": "EPSG:4326",
+  "encoding": "little-endian Float32, NaN=no data",
+  "carbon": {
+    "file": "GSOCseq_T0_Map030_CA.tif",
+    "unit": "t C/ha",
+    "depth": "0\u201330 cm",
+    "period": "GSOCseq T0 baseline (2020 model reference)",
+    "resolution": "30 arc-seconds (~1 km)",
+    "note": "Units and depth follow FAO GSOCseq documentation; uploaded GeoTIFF has no unit tags."
+  },
+  "organic_matter": {
+    "file": "om_kg_sq_m.tif",
+    "unit": "kg/m\u00b2",
+    "depth": "Total profile; exact depth not provided in uploaded file",
+    "resolution": "800 m source, nearest-cell resampled to the carbon grid",
+    "note": "Not organic matter percentage; do not derive carbon from this layer."
+  },
+  "sources": [
+    {
+      "file": "GSOCseq_T0_Map030_CA.tif",
+      "sha256": "1064b80306d8627301d12d05fef2ed3ea055390929320a5488f39f57cf9fd8af"
+    },
+    {
+      "file": "om_kg_sq_m.tif",
+      "sha256": "643ace18da99087a443cdb56faeaa0ced72559b4837dfc3397dea62ce743999a"
+    }
+  ],
+  "overlay": {
+    "west": -124.50000022263261,
+    "south": 32.50020913984287,
+    "east": -113.99821679638963,
+    "north": 41.99941474591267
+  }
+}

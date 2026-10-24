@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Davis",
+    "lat": 38.5449,
+    "lon": -121.7405,
+    "carbon": null,
+    "organic_matter": 21.34172821044922
+  },
+  {
+    "name": "Fresno",
+    "lat": 36.7468,
+    "lon": -119.7726,
+    "carbon": null,
+    "organic_matter": 7.554315567016602
+  },
+  {
+    "name": "Bakersfield",
+    "lat": 35.3733,
+    "lon": -119.0187,
+    "carbon": null,
+    "organic_matter": 2.393594264984131
+  },
+  {
+    "name": "Ohio",
+    "lat": 40.0,
+    "lon": -83.0,
+    "carbon": null,
+    "organic_matter": null
+  }
+]
