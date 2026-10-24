@@ -52,11 +52,11 @@ class TestCropRecommendationEngine(unittest.TestCase):
         results = evaluate_next_crops(["Tomatoes", "Corn", "Tomatoes"], profile)
 
         top_crop = results[0]["crop"]
-        self.assertIn(top_crop, ["Alfalfa", "Beans", "Wheat"])
+        self.assertIn(top_crop, ["Alfalfa", "Beans", "Legume Cover Crop"])
 
         # Verify reason logged for top crop
         reasons_text = " ".join(results[0]["reasons"])
-        self.assertIn("legume fixer strongly recommended", reasons_text)
+        self.assertIn("nitrogen fixer helps restore the soil", reasons_text)
 
     def test_family_rotation_disease_penalty(self):
         """Planting Tomatoes repeatedly should penalize Solanaceae crops (Tomatoes/Peppers)."""
@@ -67,7 +67,7 @@ class TestCropRecommendationEngine(unittest.TestCase):
         tomato_entry = next(c for c in results if c["crop"] == "Tomatoes")
         reasons_text = " ".join(tomato_entry["reasons"])
 
-        self.assertIn("high disease risk", reasons_text)
+        self.assertIn("disease and pest carryover risk", reasons_text)
 
     def test_ph_penalty_applied(self):
         """Test that crops with narrow pH ranges get penalized if pH is out of bounds."""
@@ -100,7 +100,7 @@ class TestCropRecommendationEngine(unittest.TestCase):
 
         beans_entry = next(c for c in results if c["crop"] == "Beans")
         reasons_text = " ".join(beans_entry["reasons"])
-        self.assertIn("exceeds sensitivity threshold", reasons_text)
+        self.assertIn("exceeds this crop's tolerance", reasons_text)
 
 
 if __name__ == "__main__":
