@@ -1,0 +1,39 @@
+{
+  "commit": "fbba4b8efa4537ac66333aada3ffc0308db8f162",
+  "repository": "https://github.com/Parnita-C/UCD_UN_RebootTheEarth_2026",
+  "layers": {
+    "om": {
+      "file": "cv_om_kg_sq_m.tif",
+      "sha256": "1cb68d40835991f059d4431141430129059451b43606df5060e3c547470ecd00",
+      "url": "https://raw.githubusercontent.com/Parnita-C/UCD_UN_RebootTheEarth_2026/fbba4b8efa4537ac66333aada3ffc0308db8f162/data/cv_om_kg_sq_m.tif"
+    },
+    "ph": {
+      "file": "cv_ph.tif",
+      "sha256": "656723d35386a9e9e8719cafdc4688a1e17cf77c21abc17e954c054c7c94b427",
+      "url": "https://raw.githubusercontent.com/Parnita-C/UCD_UN_RebootTheEarth_2026/fbba4b8efa4537ac66333aada3ffc0308db8f162/data/cv_ph.tif"
+    },
+    "ec": {
+      "file": "cv_ec.tif",
+      "sha256": "eb6a62598735db436bc0103f6b9e8f48122974a132741afae4473ad3c4a5f57d",
+      "url": "https://raw.githubusercontent.com/Parnita-C/UCD_UN_RebootTheEarth_2026/fbba4b8efa4537ac66333aada3ffc0308db8f162/data/cv_ec.tif"
+    },
+    "texture": {
+      "file": "cv_texture_0_25.tif",
+      "sha256": "4c610e819eec8c1d29a71fc13b3a85af5dee62a40056ef042ac69559d0809d68",
+      "url": "https://raw.githubusercontent.com/Parnita-C/UCD_UN_RebootTheEarth_2026/fbba4b8efa4537ac66333aada3ffc0308db8f162/data/cv_texture_0_25.tif"
+    }
+  },
+  "width": 280,
+  "height": 809,
+  "left": -2242400.0,
+  "top": 2214400.0,
+  "dx": 800.0,
+  "dy": 800.0,
+  "crsWkt": "PROJCS[\"NAD83 / Conus Albers\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5070\"]]",
+  "units": {
+    "om": "kg/m\u00b2 total profile; exact depth unspecified",
+    "ph": "pH; depth unspecified",
+    "ec": "dS/m; depth unspecified",
+    "texture": "class; 0\u201325 cm"
+  }
+}

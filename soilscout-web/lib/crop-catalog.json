@@ -1,0 +1,101 @@
+{
+  "TEXTURE_LOOKUP": {
+    "1": "Clay",
+    "2": "Silty Clay",
+    "3": "Sandy Clay",
+    "4": "Clay Loam",
+    "5": "Silty Clay Loam",
+    "6": "Sandy Clay Loam",
+    "7": "Loam",
+    "8": "Silt Loam",
+    "9": "Silt",
+    "10": "Sandy Loam",
+    "11": "Loamy Sand",
+    "12": "Sand"
+  },
+  "CROP_DATABASE": {
+    "tomatoes": {
+      "family": "Solanaceae",
+      "n_demand": "high",
+      "salt_tol": "moderate",
+      "min_ph": 6.0,
+      "max_ph": 7.0,
+      "pref_textures": [
+        "Loam",
+        "Sandy Loam",
+        "Clay Loam"
+      ]
+    },
+    "peppers": {
+      "family": "Solanaceae",
+      "n_demand": "high",
+      "salt_tol": "sensitive",
+      "min_ph": 6.0,
+      "max_ph": 6.8,
+      "pref_textures": [
+        "Loam",
+        "Sandy Loam"
+      ]
+    },
+    "corn": {
+      "family": "Poaceae",
+      "n_demand": "high",
+      "salt_tol": "moderate",
+      "min_ph": 5.8,
+      "max_ph": 7.0,
+      "pref_textures": [
+        "Loam",
+        "Clay Loam",
+        "Silt Loam"
+      ]
+    },
+    "wheat": {
+      "family": "Poaceae",
+      "n_demand": "moderate",
+      "salt_tol": "tolerant",
+      "min_ph": 6.0,
+      "max_ph": 7.5,
+      "pref_textures": [
+        "Loam",
+        "Clay Loam",
+        "Clay"
+      ]
+    },
+    "alfalfa": {
+      "family": "Fabaceae",
+      "n_demand": "fixer",
+      "salt_tol": "tolerant",
+      "min_ph": 6.5,
+      "max_ph": 7.8,
+      "pref_textures": [
+        "Loam",
+        "Sandy Loam",
+        "Silt Loam",
+        "Silty Clay Loam"
+      ]
+    },
+    "beans": {
+      "family": "Fabaceae",
+      "n_demand": "fixer",
+      "salt_tol": "sensitive",
+      "min_ph": 6.0,
+      "max_ph": 7.0,
+      "pref_textures": [
+        "Loam",
+        "Sandy Loam"
+      ]
+    },
+    "cotton": {
+      "family": "Malvaceae",
+      "n_demand": "moderate",
+      "salt_tol": "tolerant",
+      "min_ph": 5.8,
+      "max_ph": 8.0,
+      "pref_textures": [
+        "Loam",
+        "Sandy Loam",
+        "Clay Loam"
+      ]
+    }
+  }
+}
